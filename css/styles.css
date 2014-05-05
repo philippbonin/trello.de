@@ -1,0 +1,322 @@
+/**********************************************************************************
+
+	Project Name: Im Coming
+	Project Description: Coming Soon Template by Works of Wisnu
+	Author: xWisnux
+	Author URI: http://worksofwisnu.com
+	Version: 1.0.0
+	
+**********************************************************************************/
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em/1.5em;
+	color: #fff;
+	height: 100%;
+	width: 100%;
+	background-color:#F2EFDC;
+}
+
+html{
+	height: 100%;
+}
+
+p {
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Arvo', serif;
+	font-weight: bold;
+}
+
+li{
+	list-style: none;
+}
+
+/***************************
+======= HEADER =============
+***************************/
+header{
+	text-align: center;
+}
+
+#logo img {
+margin: 2em 0;
+}
+
+.header-wrapper{
+	background-color: #3F5765;
+	height: 661px;
+	background-size: cover;
+	margin-top: -242px;	
+	text-align: center;
+}
+
+.top-content{
+	padding-top: 320px;
+}
+
+/*****************************
+======= PROGRESS BAR =========
+*****************************/
+.progress-bar{
+	background: rgba(0, 0, 0, 0.1);
+	padding: 4px;
+	margin-bottom: 50px;
+	border: 3px solid white;
+	height: 25px;
+	position: relative;
+	height: 40px;
+	position: relative;
+	border-radius: 1000px;
+	-moz-border-radius: 1000px;
+	-webkit-border-radius: 1000px;
+	-o-border-radius: 1000px;
+	-ms-border-radius: 1000px;
+	
+	box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.4);
+	-o-box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.4);
+	-ms-box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.4);
+}
+
+.progress-bar span.meter{
+	background-color: #f03e1e;
+	height: 100%;
+	display: block;
+	width: 50%;
+	border-radius: 1000px;
+}
+
+.progress-bar span.percent{
+ 	font-family: 'Arvo', serif;
+	font-weight: bold;
+	position: absolute;
+	left: 40%;
+	top: 13px;
+	font-size: 1.2em;
+}
+
+/***************************
+======= BOTTOM AREA ========
+***************************/
+#bottom-wrapper{
+	background-color:#2B3A42;
+	height: auto;
+}
+
+.bottom-content{
+	padding-top: 60px;
+}
+
+/** -------- TWITTER FEED -------------- **/
+.tweet-wrapper{
+	background-color:#F2EFDC;
+	height: auto;
+	border-radius: 7px;
+}
+
+.tweet-wrapper p{
+	padding:10px;
+	color: #363636;
+}
+
+.twitter-feed h2{
+  color:#E74C3C;
+}
+
+ul.tweet_list {
+	margin: 0;
+	padding: 10px;
+	color: #363636;
+	overflow: auto;
+}
+
+ul.tweet_list li{
+	padding: 13px 0;
+}
+
+ul.tweet_list li:last-child{
+	background: none !important;
+}
+
+ul.tweet_list a{
+	color: #0072bc;
+}
+
+ul.tweet_list img{
+	float: left;
+	margin-right: 5px;
+}
+
+/** ------------- Disclaimer --------------- **/
+#disclaimer p{
+	font-size: 0.857em;
+	font-style: italic;
+	text-align: center;
+}
+
+#disclaimer p span{
+	color: #0072bc;
+}
+
+/***************************
+===== MAIN FOOTER AREA =====
+***************************/
+ul#share-button{
+	margin: 0 auto;
+	float: none;
+	max-width: 448px;
+}
+
+ul#share-button li{
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+ul#share-button li:last-child{
+	padding-right: 0;
+}
+
+ul#share-button li a img{	
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+ul#share-button li a:hover img{
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.divider{
+	background: url(../img/footer-divider.png) center no-repeat;
+	height: 40px;
+	margin-top: 34px;
+}
+
+p.copyright{
+	color: #F2EFDC;
+	text-align: center;
+	margin: 26px auto;
+}
+
+.logo{
+	text-align: center;
+	margin: 25px auto;
+	width:120px;
+}
+
+/******************************************
+				STYLE CHANGER
+******************************************/
+#ribbon {
+	width: 180px;
+	height: 280px;
+	margin: 2px auto 0;
+	position: absolute;
+	overflow: hidden;
+}
+
+#ribbon .inset {
+	width: 200px;
+	height: 55px;
+	position: absolute;
+	top: -50px;
+	left: -10px;
+	z-index: 5;
+	
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+	background: rgba(0,0,0,0.3);
+	
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+}
+
+#ribbon .container {
+	position: relative;
+	width: 100px;
+	height: 122px;
+	overflow: hidden;
+	margin: 0 auto;
+	border-left: 1px solid #631a15;
+	border-right: 1px solid #631a15;
+}
+
+#ribbon .base {
+	height: 70px;
+	width: 100px;
+	
+	background: rgb(199,59,60);
+	background: -moz-linear-gradient(top,  rgba(199,59,60,1) 0%, rgba(184,32,31,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(199,59,60,1)), color-stop(100%,rgba(184,32,31,1)));
+	background: -webkit-linear-gradient(top,  rgba(199,59,60,1) 0%,rgba(184,32,31,1) 100%);
+	background: -o-linear-gradient(top,  rgba(199,59,60,1) 0%,rgba(184,32,31,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(199,59,60,1) 0%,rgba(184,32,31,1) 100%);
+	background: linear-gradient(top,  rgba(199,59,60,1) 0%,rgba(184,32,31,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c73b3c', endColorstr='#b8201f',GradientType=0 );
+
+	position: relative;
+	z-index: 2;
+}
+
+#ribbon .base:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 86px;
+	left: 6px;
+	height: 242px;
+	border-left: 1px dashed #631a15;
+	border-right: 1px dashed #631a15;
+}
+
+#ribbon .base:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 86px;
+	left: 7px;
+	height: 242px;
+	border-left: 1px dashed #da5050;
+	border-right: 1px dashed #da5050;
+}
+
+#ribbon .left_corner {
+	width: 100px;
+	height: 103px;
+	background: #B8201F;
+	position: absolute;
+	bottom: 20px;
+	left: -50px;
+	z-index: 1;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#ribbon .right_corner {
+	width: 100px;
+	height: 99px;
+	background: #B8201F;
+	position: absolute;
+	bottom: 22px;
+	right: -50px;
+	z-index: 1;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}

@@ -1,0 +1,309 @@
+/**********************************************************************************
+
+	Project Name: Im Coming
+	Project Description: Coming Soon Template by Works of Wisnu
+	Author: xWisnux
+	Author URI: http://worksofwisnu.com
+	Version: 1.0.0
+	
+**********************************************************************************/
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+	/** -------- Top Content -------------- **/
+	.top-content {
+		padding-top: 320px;
+	}
+	
+	.timer-area {
+		width: 97%;
+		text-align: center;
+	}
+	
+	ul#countdown{
+		margin: 0 auto;
+		width: 73%;
+	}
+
+	/** -------- Bottom Content -------------- **/	
+	.bottom-content h2 {
+		font-size: 2em;
+	}
+	
+	form input[type="email"] {
+		width: 69%;
+	}
+	
+	ul#share-button{
+		width: 352px;
+	}
+	
+	ul#share-button li {
+		padding-right: 8px;
+	}
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	body {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+	/** -------- Top Content -------------- **/
+	.header-wrapper {
+		width: auto;
+	}
+
+	.top-content {
+		padding-top: 250px;
+	}
+	
+	.header-wrapper, #bottom-wrapper{
+		padding: 0 20px;
+	}
+	
+	.timer-area h1, .timer-area h2, .timer-area h3, .timer-area h4, .timer-area h5, .timer-area h6, .timer-area p {
+		text-align: center;
+		margin: 30px 0;
+	}
+	
+	ul#countdown{
+		margin: 0 auto;
+		width: 520px;
+	}
+	
+	/** -------- Bottom Content -------------- **/
+	.twitter-feed, .subscribe-area{
+		margin-bottom: 60px;
+	}
+	
+	form input[type="email"]{
+		width: 97.2%;
+		margin-bottom: 20px;
+	}
+	form input[type="submit"] {
+		width: 100%;
+	}
+	
+	ul#share-button {
+		width: 456px;
+	}
+}
+
+/* Normal Android Landscape */
+@media (max-width: 515px) {
+	/** -------- Top Content -------------- **/
+	ul#countdown {
+		margin: 0 auto;
+		width: 475px;
+	}
+
+	ul#countdown li {
+		background-size: 115px auto;
+		width: 115px;
+	}
+	
+	ul#countdown li p.timeDays, ul#countdown li p.timeHours, ul#countdown li p.timeMinutes, ul#countdown li p.timeSeconds {
+		margin-top: .7em;
+	}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	/** -------- Top Content -------------- **/
+	.timer-area h1 {
+		line-height: 1em;
+	}
+
+	.timer-area h2 {
+		font-size: 1.7em;
+	}
+	
+	ul#countdown {
+		margin: 0px auto;
+		width: 470px;
+	}
+	
+	ul#countdown li {
+		background-size: 100px auto;
+		width: 100px;
+		margin-right: 14px;
+	}
+	
+	ul#countdown li span {
+		font-size: 4em;
+		line-height: 94px;
+	}
+	
+	ul#countdown li p.timeDays, ul#countdown li p.timeHours, ul#countdown li p.timeMinutes, ul#countdown li p.timeSeconds {
+		margin-top: 1em;
+		font-size: 1.2em;
+	}
+	
+	/** -------- Mid Content -------------- **/
+	#wooden-area {
+		background-size: auto 150px;
+		height: 95px;
+	}
+	
+	/** -------- Top Content -------------- **/
+	.bottom-content h2 {
+		text-align: center;
+	}
+	
+	ul#share-button {
+		width: 85%;
+	}
+	
+	ul#share-button li {
+		padding-right: 10px;
+	}
+}
+
+/* Vertical phones and down */
+@media (max-width: 320px) {
+	/** -------- Top Content -------------- **/
+	.timer-area h2, .timer-area h3{
+		line-height: 1.2em;
+	}
+	
+	.timer-area h1, .timer-area h2, .timer-area h3, .timer-area h4, .timer-area h5, .timer-area h6, .timer-area p {
+		margin: 15px 0;
+	}
+	
+	ul#countdown{
+		width: 280px;
+	}
+	
+	ul#countdown li {
+		background-size: 65px;
+		width: 65px;
+		margin-right: 5px;
+	}
+	
+	ul#countdown li span {
+		font-size: 2.8em;
+		line-height: 60px;
+	}
+	
+	ul#countdown li p.timeDays, ul#countdown li p.timeHours, ul#countdown li p.timeMinutes, ul#countdown li p.timeSeconds {
+		margin-top: 0;
+		font-size: .8em;
+	}
+	
+	.progress-bar {
+		height: 20px;
+		border: 2px solid #fff;
+	}
+	
+	.progress-bar span.percent {
+		left: 60%;
+		top: 3px;
+		font-size: .85em;
+	}
+	
+	/** -------- Mid Content -------------- **/
+	#wooden-area {
+		background-size: auto 120px;
+		height: 95px;
+	}
+	
+	/** -------- Bottom Content -------------- **/
+	.subscribe-area p{
+		text-align: center;
+	}
+	
+	form input[type="email"] {
+		width: 93%;
+	}
+}
+
+/* Normal android portrait */
+@media (max-width: 295px) {
+	/** -------- Top Content -------------- **/
+	ul#countdown {
+		margin: 0 auto;
+		width: 255px;
+	}
+
+	ul#countdown li {
+		background-size: 60px auto;
+		width: 60px;
+		margin-right: 3px;
+	}
+	
+	ul#countdown li span {
+		font-size: 2.2em;
+		line-height: 55px;
+	}
+
+	/** -------- Bottom Content -------------- **/
+	.subscribe-area p{
+		text-align: center;
+	}
+	
+	form input[type="email"] {
+		width: 92%;
+	}
+}
+
+/* Small android portrait */
+@media (max-width: 240px) {
+	/** -------- Top Content -------------- **/
+	.header-wrapper {
+		height: 725px !important;
+	}
+	
+	.timer-area h1 {
+		font-size: 3.3em;
+	}
+	
+	.timer-area h3 {
+		font-size: 1.2em;
+	}
+	
+	ul#countdown {
+		margin: 20px auto;
+		width: 200px;
+	}
+
+	ul#countdown li {
+		background-size: 88px auto;
+		width: 95px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	
+	ul#countdown li:nth-child(2), ul#countdown li:nth-child(4) {
+		margin-right: 0;
+	}
+	
+	ul#countdown li span {
+		font-size: 3.2em;
+		line-height: 85px;
+		margin-left: -7px;
+	}
+	
+	ul#countdown li p.timeDays, ul#countdown li p.timeHours, ul#countdown li p.timeMinutes, ul#countdown li p.timeSeconds {
+		margin-top: 5px;
+		font-size: 1em;
+		margin-bottom: 0;
+	}
+
+	/** -------- Bottom Content -------------- **/
+	.subscribe-area p{
+		text-align: center;
+	}
+	
+	form input[type="email"] {
+		width: 92%;
+	}
+}
