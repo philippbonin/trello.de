@@ -52,9 +52,18 @@ margin: 2em 0;
 	text-align: center;
 }
 
+.header-wrapper.imprint{
+	height:700px;
+}
+
 .top-content{
 	padding-top: 320px;
 }
+
+.top-content.imprint{
+	padding-top: 250px;
+}
+
 
 /*****************************
 ======= PROGRESS BAR =========
@@ -204,6 +213,18 @@ p.copyright{
 	color: #F2EFDC;
 	text-align: center;
 	margin: 26px auto;
+}
+
+a.imprint, a.imprint:visited{
+	display: block;
+	color: #F2EFDC;
+	text-align: center;
+	margin: 26px auto;
+}
+
+a.imprint:hover{
+	color: #f03e1e;
+	text-decoration: none;
 }
 
 .logo{
