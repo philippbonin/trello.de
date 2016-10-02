@@ -34,6 +34,28 @@ li{
 }
 
 /***************************
+======= IMG =============
+***************************/
+
+
+.test-div {
+    border:0;
+    width:100%;
+}
+.test-div-inner {
+    padding-bottom:100%;
+    background:#EEE;
+    height:0;
+    position:relative;
+}
+.test-image {
+    width:100%;
+    height:100%;
+    display:block;
+    position:absolute;
+}
+
+/***************************
 ======= HEADER =============
 ***************************/
 header{
