@@ -52,16 +52,20 @@ margin: 2em 0;
 	text-align: center;
 }
 
-.header-wrapper.imprint{
-	height:750px;
+.header-wrapper{
+	height: auto;
 }
 
 .top-content{
 	padding-top: 320px;
 }
 
-.top-content.imprint{
-	padding-top: 250px;
+.top-content ol, p{
+	margin:0;
+}
+
+.top-content.imprint, .top-content.privacy	{
+	padding: 250px 20px 50px 20px;
 }
 
 
