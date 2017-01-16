@@ -1,1 +1,1 @@
-ProfitBrick - a good fellow 
+ Philipp Bonins spare time project
