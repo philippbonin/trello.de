@@ -72,7 +72,7 @@ margin: 2em 0;
 	height: 661px;
 	background-size: cover;
 	margin-top: -242px;	
-	text-align: center;
+	text-align: left;
 }
 
 .header-wrapper{
@@ -230,12 +230,6 @@ ul#share-button li a:hover img{
 	transform: scale(0.9);
 }
 
-.divider{
-	background: url(../img/footer-divider.png) center no-repeat;
-	height: 40px;
-	margin-top: 34px;
-}
-
 p.copyright{
 	color: #F2EFDC;
 	text-align: center;
@@ -367,4 +361,96 @@ a.imprint:hover{
 	-ms-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
+}
+/***********************************************/
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    margin-top: 30px;
+}
+
+.overlay p {
+    padding: 8px;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+
+.overlay .content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: inline;
+}
+
+.overlay .overlay .content a:hover {
+    color: #cc2900;
+}
+
+.overlay li{
+    line-height: 2;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.overlay li .closebtn {
+    position: relative;
+    display: inline;
+    right: 0;
+    top: 5px;
+    color: #f03e1e;
+    font-size: 30px;
+    margin:0;
+    padding: 0;
+}
+
+.overlay .content {
+    margin: auto;
+    top: 3%;
+    width: 50%;
+    border: 3px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+    text-decoration: underline;
+}
+
+.overlay .closebtn {
+    text-decoration:none;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #ff3300;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }

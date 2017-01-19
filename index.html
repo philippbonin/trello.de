@@ -34,13 +34,41 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+
+  var trackOutboundLink = function(url) {
+      ga('send', 'event', 'outbound to trello.com', 'click on link', url, {
+          'transport': 'beacon',
+          'hitCallback': function(){document.location = url;}
+      });
+  }
+
+  var trackOutboundImage = function(url) {
+      ga('send', 'event', 'outbound to trello.com', 'click on Img', url, {
+          'transport': 'beacon',
+          'hitCallback': function(){document.location = url;}
+      });
+  }
+
   ga('create', 'UA-90457568-1', 'auto');
   ga('set', 'anonymizeIp', true);
   ga('send', 'pageview');
 
   $(document).ready(function(){
         $(".test-image").fadeIn(4000);
+        $('.id-main-content').hide();
+        $('body').addClass('stop-scrolling');
+        setTimeout(function(){
+            document.getElementById("myNav").style.height = "100%";
+            $('body').bind('touchmove', function(e){e.preventDefault()});
+        }, 4000);
     });
+
+  function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+      $('body').unbind('touchmove');
+      $('body').removeClass('stop-scrolling');
+      $('.id-main-content').show();
+  }
 
 </script>
   </head>
@@ -51,6 +79,27 @@
 	<header class="container">
 		<!--<a href="index.html" id="logo"><img src="img/logo.png" alt="Coming Soon Page" /></a> -->
 	</header>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content content">
+            <p>
+                Dear visitor,</br></br>
+                this is maybe <b>NOT</b> the service you are looking for.
+            </p>
+            </br></br>
+                <ol>
+                    <li>If you are trying to reach Philipp's private blog just click on the <div class="closebtn">&times;</div> in the upper right corner.</li>
+                    <li>If you are trying to reach <a href="https://trello.com" ><img src="img/trello-logo-blue.png" width="100px" alt="trello.com" onclick="trackOutboundImage('http://trello.com'); return false;" /></a> one of the best web-based project management applications click on the trello logo or follow this link &#8594;<a href="https://trello.com" onclick="trackOutboundLink('http://trello.com'); return false;">https://trello.com</a></li>
+                </ol>
+            <p>
+            </br></br>
+                Best Regards,</br></br>
+                Philipp Bonin
+            </p>
+        </div>
+    </div>
+
 	<!-- END Header -->
 	<div class="test-div">
     <div class="test-div-inner">
@@ -67,7 +116,7 @@
 			<div class="row">
 			
 				<!-- Start Timer Area / Progress Bar Area-->
-				<div class="timer-area ">
+				<div class="id-main-content timer-area ">
 				
 					<h1>Welcome!</h1>
 					
@@ -99,7 +148,7 @@
 		<!-- Start Footer Area -->
 		<footer id="main-footer">
 		
-			<div class="container">
+			<div class="id-main-content-footer container">
 				
 				<div class="clearfix"></div>
 				
