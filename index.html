@@ -63,13 +63,15 @@
   ga('send', 'pageview');
 
   $(document).ready(function(){
-        $(".test-image").fadeIn(4000);
+        $(".test-image").fadeIn(2000);
         $('.id-main-content').hide();
+        $('#bottom-wrapper').hide();
+
         $('body').addClass('stop-scrolling');
         setTimeout(function(){
             document.getElementById("myNav").style.height = "100%";
             $('body').bind('touchmove', function(e){e.preventDefault()});
-        }, 4000);
+        }, 3000);
     });
 
   function closeOverlay() {
@@ -93,17 +95,15 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
         <div class="overlay-content content">
-            <p>
+            <p class="margin0-0-X-0">
                 Dear visitor,</br></br>
                 this is maybe <b>NOT</b> the service you are looking for.
             </p>
-            </br></br>
                 <ol>
-                    <li>If you are trying to reach Philipp's non-commercial blog just click on the <div class="closebtn">&times;</div> in the upper right corner.</li>
+                    <li>If you are trying to reach Philipp's non-commercial blog just click on the <div class="closebtn">&times;</div>  in the upper right corner.</li>
                     <li>If you are trying to reach <a href="https://trello.com" ><img src="img/trello-logo-blue.png" width="100px" alt="trello.com" onclick="trackOutboundImage('http://trello.com'); return false;" /></a> one of the best web-based project management applications click on the trello logo or follow this link &#8594;<a href="https://trello.com" onclick="trackOutboundLink('http://trello.com'); return false;">https://trello.com</a></li>
                 </ol>
-            <p>
-            </br></br>
+            <p class="marginX-0-0-0">
                 Best Regards,</br></br>
                 Philipp Bonin
             </p>
