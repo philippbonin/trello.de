@@ -37,8 +37,11 @@ li{
 ======= IMG =============
 ***************************/
 
-body {
-    background: url(../img/new_hobby2.jpg) no-repeat center center fixed;
+body.index {
+    background-image: url(../img/new_hobby2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
