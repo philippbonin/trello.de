@@ -49,6 +49,15 @@
       });
   }
 
+  function handleStayOnPage(event) {
+      ga('send', 'event', {
+          eventCategory: 'visitor stayed on pages',
+          eventAction: 'click',
+          eventLabel: 'click on X upper right corner',
+          transport: 'beacon'
+      });
+  }
+
   ga('create', 'UA-90457568-1', 'auto');
   ga('set', 'anonymizeIp', true);
   ga('send', 'pageview');
@@ -63,7 +72,8 @@
         }, 4000);
     });
 
-  function closeNav() {
+  function closeOverlay() {
+      handleStayOnPage();
       document.getElementById("myNav").style.height = "0%";
       $('body').unbind('touchmove');
       $('body').removeClass('stop-scrolling');
@@ -81,7 +91,7 @@
 	</header>
 
     <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
         <div class="overlay-content content">
             <p>
                 Dear visitor,</br></br>
