@@ -37,23 +37,31 @@ li{
 ======= IMG =============
 ***************************/
 
+body {
+    background: url(../img/new_hobby2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 .test-div {
-    border:0;
-    width:100%;
+         border:0;
+         width:100%;
 }
+
 .test-div-inner {
-    padding-bottom:100%;
-    background:#EEE;
-    height:0;
-    position:relative;
+         padding-bottom:100%;
+         background:#EEE;
+         height:0;
+         position:relative;
 }
+
 .test-image {
-    width:100%;
-    height:100%;
-    display:block;
-    position:absolute;
-    display:none;
+         width:100%;
+         height:100%;
+         display:block;
+         position:absolute;
 }
 
 /***************************

@@ -63,15 +63,13 @@
   ga('send', 'pageview');
 
   $(document).ready(function(){
-        $(".test-image").fadeIn(2000);
-        $('.id-main-content').hide();
-        $('#bottom-wrapper').hide();
+        $('#content-wrapper').hide();
 
         $('body').addClass('stop-scrolling');
         setTimeout(function(){
             document.getElementById("myNav").style.height = "100%";
             $('body').bind('touchmove', function(e){e.preventDefault()});
-        }, 3000);
+        }, 1000);
     });
 
   function closeOverlay() {
@@ -79,8 +77,7 @@
       document.getElementById("myNav").style.height = "0%";
       $('body').unbind('touchmove');
       $('body').removeClass('stop-scrolling');
-      $('.id-main-content').show();
-      $('#bottom-wrapper').show();
+      $('#content-wrapper').show();
   }
 
 </script>
@@ -111,69 +108,70 @@
         </div>
     </div>
 
-	<!-- END Header -->
-	<div class="test-div">
-    <div class="test-div-inner">
-    	<img class="test-image" src="img/new_hobby2.jpg"/>
-    </div>
-	</div>
-	
-	<!-- Start Header Wrapper -->
-	<div class="header-wrapper">
-	
-		<!-- Start Top Content -->
-		<div class="top-content container">
-		
-			<div class="row">
-			
-				<!-- Start Timer Area / Progress Bar Area-->
-				<div class="id-main-content timer-area ">
-				
-					<h1>Welcome!</h1>
-					
-					<h2>This is my new <b>non-commercial</b> blog.</h2>
-					
-					<h3>I am still collecting some pictures, please be patient.</h3>
-						
-					<!-- .Progress Bar -->
-					<div class="progress-bar">
-						<span class="meter"></span>
-						<span class="percent">90%</span>
-					</div>
-					<!-- /Progress Bar -->
-				
-				</div>
-				<!-- END Timer Area / Progress Bar Area -->
-	
-			</div>
+    <div id="content-wrapper">
 
-		</div>
-		<!-- END Top Content -->
-	
-	</div>
-	<!-- END Header Wrapper -->
-	
-	<!-- Start Bottom Wrapper Area -->
-	<div id="bottom-wrapper">
-		
-		<!-- Start Footer Area -->
-		<footer id="main-footer">
-		
-			<div class="id-main-content-footer container">
-				
-				<div class="clearfix"></div>
-				
-				
-				<p class="copyright">&copy;2017 Philipp Bonin.</p>
-				<a class="imprint" href="impressum.html">Imprint</a>
-				<a class="imprint" href="dataprivacy.html">Datenschutz</a>
-			</div>
-		
-		</footer>
-		<!-- END Footer Area -->
-	
-	</div>
-	<!-- END Bottom Wrapper Area -->
+                 <div class="test-div">
+                    <div class="test-div-inner">
+                        <img class="test-image" src="img/new_hobby2.jpg"/>
+                    </div>
+                 </div>
+                <!-- Start Header Wrapper -->
+                <div class="header-wrapper">
+
+                    <!-- Start Top Content -->
+                    <div class="top-content container">
+
+                        <div class="row">
+
+                            <!-- Start Timer Area / Progress Bar Area-->
+                            <div class="id-main-content timer-area ">
+
+                                <h1>Welcome!</h1>
+
+                                <h2>This is my new <b>non-commercial</b> blog.</h2>
+
+                                <h3>I am still collecting some pictures, please be patient.</h3>
+
+                                <!-- .Progress Bar -->
+                                <div class="progress-bar">
+                                    <span class="meter"></span>
+                                    <span class="percent">90%</span>
+                                </div>
+                                <!-- /Progress Bar -->
+
+                            </div>
+                            <!-- END Timer Area / Progress Bar Area -->
+
+                        </div>
+
+                    </div>
+                    <!-- END Top Content -->
+
+                </div>
+                <!-- END Header Wrapper -->
+
+                <!-- Start Bottom Wrapper Area -->
+                <div id="bottom-wrapper">
+
+                    <!-- Start Footer Area -->
+                    <footer id="main-footer">
+
+                        <div class="id-main-content-footer container">
+
+                            <div class="clearfix"></div>
+
+
+                            <p class="copyright">&copy;2017 Philipp Bonin.</p>
+                            <a class="imprint" href="impressum.html">Imprint</a>
+                            <a class="imprint" href="dataprivacy.html">Datenschutz</a>
+                        </div>
+
+                    </footer>
+                    <!-- END Footer Area -->
+
+                </div>
+                <!-- END Bottom Wrapper Area -->
+    </div>
 
   </body>
 </html>
