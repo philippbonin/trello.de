@@ -13,7 +13,7 @@ body{
 	color: #fff;
 	height: 100%;
 	width: 100%;
-	background-color:#F2EFDC;
+	background-color:#2B3A42;
 }
 
 html{
@@ -365,6 +365,7 @@ a.imprint:hover{
 /***********************************************/
 
 .overlay {
+    font-size: 20px;
     height: 0%;
     width: 100%;
     position: fixed;
@@ -383,15 +384,14 @@ a.imprint:hover{
 
 .overlay p {
     padding: 8px;
-    font-size: 25px;
     color: white;
     display: block;
+    line-height: 1.5;
 }
 
 .overlay .content a {
     padding: 8px;
     text-decoration: none;
-    font-size: 20px;
     color: white;
     display: inline;
 }
@@ -402,7 +402,6 @@ a.imprint:hover{
 
 .overlay li{
     line-height: 2;
-    font-size: 20px;
     margin: 20px;
 }
 
@@ -415,6 +414,7 @@ a.imprint:hover{
     font-size: 30px;
     margin:0;
     padding: 0;
+    line-height: 0;
 }
 
 .overlay .content {
@@ -440,17 +440,21 @@ a.imprint:hover{
     color: #ff3300;
 }
 
-@media screen and (max-height: 450px) {
-    .overlay {overflow-y: auto;}
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
 
 .stop-scrolling {
     height: 100%;
     overflow: hidden;
+}
+
+.margin0-0-X-0{
+    margin: 0 0 20px 0;
+}
+
+.marginX-0-0-0{
+    margin: 20px 0 0 0;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
 }
