@@ -78,7 +78,9 @@ var enableGA = function(){
     }
 
 var delete_cookie = function(name) {
-    document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    var domain = domain || document.domain;
+    var path = path || "/";
+        document.cookie = name +"=; expires=Thu, 01 Jan 1970 00:00:01 GMT; domain=" + domain + "; path=" + path;
     };
 
 
