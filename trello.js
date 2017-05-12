@@ -18,6 +18,7 @@ content: {
     "deny": "Decline",
     "href": "http://trello.de/dataprivacy.html"
     },
+    animateRevokable:false,
 onStatusChange: function(status, chosenBefore) {
     console.log('status changed');
     var type = this.options.type;
