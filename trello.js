@@ -18,9 +18,13 @@ content: {
     "deny": "Decline",
     "href": "http://trello.de/dataprivacy.html"
     },
+cookie:{
+  "name":"trelloDeCookie",
+  "path":"/",
+  "domain":"trello.de"
+},
     animateRevokable:false,
 onStatusChange: function(status, chosenBefore) {
-    console.log('status changed');
     var type = this.options.type;
     var didConsent = this.hasConsented();
     if (didConsent){
@@ -28,11 +32,11 @@ onStatusChange: function(status, chosenBefore) {
     }
 
 if (type == 'opt-out' && !didConsent) {
-    console.log('delete');
     delete_cookie("_ga");
     delete_cookie("_gat");
     delete_cookie("_gid");
-    }
+    delete_cookie("trelloDeCookie");
+}
 }
 });
 if (!instance.hasAnswered()){
