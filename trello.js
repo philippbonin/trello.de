@@ -14,7 +14,7 @@ window.addEventListener("load", function(){
 },
 type: "opt-out",
 content: {
-    "allow": "Accept",
+    "dismiss": "Accept",
     "deny": "Decline",
     "href": "http://trello.de/dataprivacy.html"
     },
