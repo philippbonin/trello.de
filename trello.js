@@ -1,4 +1,3 @@
-
 window.addEventListener("load", function(){
     enableGA();
     var instance = new window.cookieconsent.Popup({
@@ -30,7 +29,6 @@ onStatusChange: function(status, chosenBefore) {
     if (didConsent){
     enableGA()
     }
-
 if (type == 'opt-out' && !didConsent) {
     delete_cookie("_ga");
     delete_cookie("_gat");
@@ -41,7 +39,7 @@ if (type == 'opt-out' && !didConsent) {
 });
 if (!instance.hasAnswered()){
     instance.open();
-    }else{
+    }else if(!instance.hasConsented()){
     instance.toggleRevokeButton(true);
     }
 document.body.appendChild(instance.element);
