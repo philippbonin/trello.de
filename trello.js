@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
         cookie: {
             "name": "trelloDeCookie",
             "path": "/",
-            "domain": "localhost"
+            "domain": "trello.de"
         },
         animateRevokable: false,
         onRevokeChoice: function () {
