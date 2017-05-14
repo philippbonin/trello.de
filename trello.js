@@ -28,6 +28,18 @@ window.addEventListener("load", function () {
         onRevokeChoice: function () {
             instance.open();
         },
+        onInitialise: function (status) {
+            var type = this.options.type;
+            var didConsent = this.hasConsented();
+            if (didConsent) {
+                enableGA()
+            }
+            if (type == 'opt-out' && !didConsent) {
+                delete_cookie("_ga");
+                delete_cookie("_gat");
+                delete_cookie("_gid");
+            }
+        },
         onStatusChange: function (status, chosenBefore) {
             var type = this.options.type;
             var didConsent = this.hasConsented();
@@ -38,7 +50,6 @@ window.addEventListener("load", function () {
                 delete_cookie("_ga");
                 delete_cookie("_gat");
                 delete_cookie("_gid");
-                delete_cookie("trelloDeCookie");
             }
         }
     });
@@ -48,6 +59,8 @@ window.addEventListener("load", function () {
         instance.open();
     } else if (instance.hasConsented() && instance.isOpen()) {
         instance.close();
+    } else if (!instance.hasConsented() && !instance.isOpen()) {
+        instance.open();
     }
 
     document.body.appendChild(instance.element);
