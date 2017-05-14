@@ -13,7 +13,6 @@ window.addEventListener("load", function () {
         },
         type: "opt-out",
         revokable: true,
-        dismissOnScroll: true,
         preventOpen: false,
         content: {
             "allow": "Accept",
@@ -23,7 +22,7 @@ window.addEventListener("load", function () {
         cookie: {
             "name": "trelloDeCookie",
             "path": "/",
-            "domain": "trello.de"
+            "domain": "localhost"
         },
         animateRevokable: false,
         onRevokeChoice: function () {
@@ -106,18 +105,6 @@ var delete_cookie = function (name) {
     document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:01 GMT; domain=" + domain + "; path=" + path;
 };
 
-
-$(document).ready(function () {
-    $('#content-wrapper').hide();
-
-    $('body').addClass('stop-scrolling');
-    setTimeout(function () {
-        document.getElementById("myNav").style.height = "100%";
-        $('body').bind('touchmove', function (e) {
-            e.preventDefault()
-        });
-    }, 1000);
-});
 
 function closeOverlay() {
     handleStayOnPage();
