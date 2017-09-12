@@ -89,7 +89,7 @@ var trackOutboundLink = function (url) {
 }
 
 var trackOutboundLinkPhilippBonin = function (url) {
-    ga('send', 'event', 'outbound to philippbonin.de', 'click on link', url, {
+    ga('send', 'event', 'outbound to philippbonin.de', 'click on philippbonin.de', url, {
         'transport': 'beacon',
         'hitCallback': function () {
             document.location = url;
