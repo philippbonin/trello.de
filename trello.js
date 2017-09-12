@@ -88,6 +88,15 @@ var trackOutboundLink = function (url) {
     });
 }
 
+var trackOutboundLinkPhilippBonin = function (url) {
+    ga('send', 'event', 'outbound to philippbonin.de', 'click on link', url, {
+        'transport': 'beacon',
+        'hitCallback': function () {
+            document.location = url;
+        }
+    });
+}
+
 var trackOutboundImage = function (url) {
     ga('send', 'event', 'outbound to trello.com', 'click on Img', url, {
         'transport': 'beacon',
